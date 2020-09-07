@@ -1,0 +1,34 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": ".logs\\.eb14f68698d3e957113cd16b8e4fed172af135fc-audit.json",
+    "files": [
+        {
+            "date": 1598264220252,
+            "name": ".logs\\combined-log-24-08-2020.log",
+            "hash": "807540381850e5bae845c44171e5c23b"
+        },
+        {
+            "date": 1598341714690,
+            "name": ".logs\\combined-log-25-08-2020.log",
+            "hash": "630fd8591ac618c4b4271039243e964f"
+        },
+        {
+            "date": 1598430683556,
+            "name": ".logs\\combined-log-26-08-2020.log",
+            "hash": "7b444f91bf4b87f5273d6e520a86e180"
+        },
+        {
+            "date": 1598518728786,
+            "name": ".logs\\combined-log-27-08-2020.log",
+            "hash": "5d555846b37af92d44e20f01fb1778ea"
+        },
+        {
+            "date": 1598605770015,
+            "name": ".logs\\combined-log-28-08-2020.log",
+            "hash": "1cdd08e3858cd5a18e7b069ae8d5bcaa"
+        }
+    ]
+}
