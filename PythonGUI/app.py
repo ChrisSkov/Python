@@ -25,6 +25,7 @@ def addApp():
         label = tk.Label(frame, text=app, bg="gray")
         label.pack()
 
+
 def runApps():
 
     for app in apps:

@@ -1,3 +1,10 @@
+import pathlib
+import tkinter as tk
+from tkinter import filedialog, Text
+import os
+
+
+root = tk.Tk()
 
 no_of_errors = 0
 with open("D:/Python/LogsToRead/.logs/combined-log-24-08-2020.log", "r") as a_file:
@@ -20,3 +27,23 @@ print(no_of_errors)
 # match_text = match.group()
 # math_list.append(match_text)
 # print match_text
+
+
+def selectLogDir():
+    directory_name = filename = filedialog.askdirectory()
+    for path in pathlib.Path(directory_name).iterdir():
+        if path.is_file():
+            current_file = open(path, "r")
+            print(current_file.read())
+            current_file.close()
+
+
+canvas = tk.Canvas(root, height=700, width=700, bg="teal")
+canvas.pack()
+frame = tk.Frame(root, bg="white")
+frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)
+
+openFile = tk.Button(root, text="Open File", padx=10, pady=5, fg="white", bg="teal", command=selectLogDir)
+openFile.pack()
+
+root.mainloop()
